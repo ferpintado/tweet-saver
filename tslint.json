@@ -1,0 +1,31 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-airbnb", "tslint-config-prettier"],
+  "jsRules": false,
+  "rules": {
+    "cognitive-complexity": false,
+    "max-union-size": false,
+    "no-big-function": false,
+    "no-duplicate-string": false,
+    "no-hardcoded-credentials": false,
+    "no-identical-functions": false,
+    "no-nested-template-literals": false,
+    "use-type-alias": false,
+    "import-name": false,
+    "variable-name": false,
+    "function-name": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "named-imports-order": "lowercase-first"
+      }
+    ],
+    "ter-arrow-parens": false,
+    "prettier": true
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "linterOptions": {
+    "exclude": ["src/setupTests.js"]
+  }
+}
