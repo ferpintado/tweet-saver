@@ -17,6 +17,7 @@
     "react-dom": "^16.13.1",
     "react-draggable": "^4.3.1",
     "react-scripts": "3.4.1",
+    "serve": "^11.3.0",
     "styled-components": "^5.1.0",
     "typescript": "~3.7.2"
   },
@@ -24,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build -p 8080"
   },
   "eslintConfig": {
     "extends": "react-app"
