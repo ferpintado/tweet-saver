@@ -21,8 +21,7 @@ export default function SearchTweets() {
       if (err) {
         setUiConfig({ ...uiConfig, loading: false, error: true });
       } else {
-        console.log(data);
-        setUiConfig({ ...uiConfig, loading: false, error: true });
+        setUiConfig({ ...uiConfig, loading: false, error: false });
         setResults(data.tweets);
       }
     });

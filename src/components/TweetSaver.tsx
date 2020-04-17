@@ -1,5 +1,6 @@
 import React from 'react';
-import SearchTweets from './common/tweet-saver/SearchTweets';
+import SavedTweets from './tweet-saver/SavedTweets';
+import SearchTweets from './tweet-saver/SearchTweets';
 
 export default function TweetSaver() {
   return (
@@ -7,7 +8,9 @@ export default function TweetSaver() {
       <div className="col-md">
         <SearchTweets />
       </div>
-      <div className="col-md">Test 2</div>
+      <div className="col-md">
+        <SavedTweets />
+      </div>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import TweetList from './TweetList';
 
 interface SearchResultsProps {
   loading: boolean;
   error: boolean;
-  results: never[];
+  results: any[];
 }
 
 const StyledLoading = styled.p`
@@ -24,6 +25,10 @@ const SearchResults: FunctionComponent<SearchResultsProps> = ({ loading, error, 
 
   if (error) {
     return <StyledError>API Error</StyledError>;
+  }
+
+  if (results.length) {
+    return <TweetList tweets={results} />;
   }
 
   return <></>;
