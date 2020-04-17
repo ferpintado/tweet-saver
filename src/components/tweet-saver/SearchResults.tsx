@@ -28,7 +28,7 @@ const SearchResults: FunctionComponent<SearchResultsProps> = ({ loading, error, 
   }
 
   if (results.length) {
-    return <TweetList tweets={results} />;
+    return <TweetList tweets={results} draggable={true} />;
   }
 
   return <></>;
